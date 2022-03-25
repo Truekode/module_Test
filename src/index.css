@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  height: 100%;
+  display: flex;
+}
+
+.transportable {
+  min-width: 264px;
+  display: flex;
+  grid-row-gap: 10px;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  outline: 1px solid #00000059;
+  padding: 10px;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.centered-map-loading {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-active {
+  outline: 3px solid #1890ff;
 }
